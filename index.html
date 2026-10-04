@@ -1,0 +1,252 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Mental Stress Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>🧠 AI Mental Stress Detection</h1>
+
+        <p>
+            Analyze speech and text for stress-related language patterns
+        </p>
+
+    </header>
+
+
+    <!-- Main Card -->
+
+    <div class="main-card">
+
+
+        <!-- Text Analysis -->
+
+        <section class="text-section">
+
+            <h2>📝 Text Analysis</h2>
+
+            <textarea
+                id="textInput"
+                placeholder="Type how you are feeling...
+
+Example:
+I am feeling very worried and stressed about my exams."
+            ></textarea>
+
+
+            <div class="buttons">
+
+                <button onclick="analyzeText()">
+                    🔍 Analyze Text
+                </button>
+
+                <button
+                    class="clear-btn"
+                    onclick="clearAll()">
+                    Clear
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Speech Analysis -->
+
+        <section class="speech-section">
+
+            <h2>🎤 Speech Analysis</h2>
+
+            <p id="speechStatus">
+                Click the button and speak about how you feel.
+            </p>
+
+            <button
+                class="voice-btn"
+                onclick="startSpeech()">
+
+                🎤 Start Speech
+
+            </button>
+
+
+            <p id="speechText"></p>
+
+        </section>
+
+
+        <!-- Result -->
+
+        <section class="result-section">
+
+            <h2>📊 Analysis Result</h2>
+
+
+            <div id="stressIcon">
+
+                😊
+
+            </div>
+
+
+            <h3 id="stressResult">
+
+                Result will appear here
+
+            </h3>
+
+
+            <p id="stressMessage">
+
+                Enter text or use speech analysis.
+
+            </p>
+
+
+            <!-- Stress Meter -->
+
+            <div class="stress-meter">
+
+                <p>
+                    Stress Indicator:
+                    <strong id="stressScore">
+                        0%
+                    </strong>
+                </p>
+
+
+                <div class="progress">
+
+                    <div id="stressBar"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Word Analysis -->
+
+            <div class="analysis-box">
+
+                <h3>🔎 Detected Patterns</h3>
+
+
+                <p>
+                    Stress-related words:
+                    <strong id="stressWords">
+                        0
+                    </strong>
+                </p>
+
+
+                <p>
+                    Positive words:
+                    <strong id="positiveWords">
+                        0
+                    </strong>
+                </p>
+
+
+                <p>
+                    Total words:
+                    <strong id="totalWords">
+                        0
+                    </strong>
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- Examples -->
+
+    <div class="examples">
+
+        <h2>Try Sample Text</h2>
+
+
+        <button onclick="useExample(
+            'I am very stressed and worried about my exams. I cannot sleep properly.'
+        )">
+
+            😟 High Stress
+
+        </button>
+
+
+        <button onclick="useExample(
+            'I feel a little worried today but I think everything will be okay.'
+        )">
+
+            😐 Moderate Stress
+
+        </button>
+
+
+        <button onclick="useExample(
+            'I feel happy, relaxed and comfortable today.'
+        )">
+
+            😊 Low Stress
+
+        </button>
+
+    </div>
+
+
+    <!-- Disclaimer -->
+
+    <div class="disclaimer">
+
+        <h3>⚠️ Important Note</h3>
+
+        <p>
+            This application is an educational project and does not
+            provide medical or psychological diagnosis. If you are
+            experiencing significant or persistent distress, consider
+            speaking with a qualified mental-health professional.
+        </p>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            AI-Based Mental Stress Detection
+        </p>
+
+        <p>
+            Text + Speech Analysis | Mini Project
+        </p>
+
+    </footer>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+```
